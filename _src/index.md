@@ -3,7 +3,7 @@ title: Home
 layout: base.njk
 ---
 
-<h1>Remi's Mom's Simple Lemonade Recipe</h1>
+<h1>Remi's Simple Lemonade Recipe</h1>
 
 <p>Refresh yourself with this easy-to-make lemonade!</p>
 
