@@ -1,24 +1,13 @@
 ---
 title: Home
 layout: base.njk
+permalink: index.html
 ---
 
-<h1>Remi's Simple Lemonade Recipe</h1>
+<h1>Welcome to my ThreeJS Project Website Using Eleventy or TPWUE for short!</h1>
 
-<p>Refresh yourself with this easy-to-make lemonade!</p>
+<p>Just out this cool chunk of text to add some text to this page! Wowser! and look! An image!</p>
 
-<ul>
-  <li>1 cup of freshly squeezed lemon juice (4-6 lemons)</li>
-  <li>1/2 cup of sugar (adjust to taste)</li>
-  <li>4 cups of cold water</li>
-  <li>Ice cubes</li>
-  <li>Fresh mint leaves (optional)</li>
-</ul>
+<img src="./images/RO_Logo.png" alt="RO Logo" class="logo">
 
-<h2>Instructions:</h2>
-<ol>
-  <li>In a pitcher, combine the lemon juice and sugar. Stir until the sugar dissolves.</li>
-  <li>Add the cold water and mix well.</li>
-  <li>Fill glasses with ice cubes and pour in the lemonade.</li>
-  <li>Garnish with mint leaves if desired. Serve and enjoy!</li>
-</ol>
+
