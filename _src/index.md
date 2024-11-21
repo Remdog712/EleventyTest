@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: base.njk
+layout: imageGallery.njk
 permalink: index.html
 ---
 

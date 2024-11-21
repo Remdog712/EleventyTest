@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {% include "layouts/header.html" %}
+
+    <h1>{{ title }}</h1>
+    <h2>{{ param }}</h2>
+    <p>What's my permalink parameter? {{ permalink }}</p>
+
+    {{ content | safe }}
+
+    <div class="flex">
+        {% for file in image_metadata %}
+            <figure>
+                <img src="{{ file.filepath }}" alt="{{ file.filename }}">
+                <figcaption>
+                    {{ file.filename 
+                        | replace(".jpg", "") 
+                        | replace(".jpeg", "") 
+                        | replace(".png", "") 
+                        | replace("_", " ") 
+                    }}
+                </figcaption>
+            </figure>
+        {% endfor %}
+    </div>
+
+    <ul class="image-titles">
+        {% for file in image_metadata %}
+            <li>
+                {{ file.filename 
+                    | replace(".jpg", "") 
+                    | replace(".jpeg", "") 
+                    | replace(".png", "") 
+                    | replace("_", " ") 
+                }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% include "layouts/footer.html" %}
+</body>
+</html>

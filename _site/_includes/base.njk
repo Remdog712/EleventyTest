@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="/js/gallery.js"></script>
 </head>
 <body>
     {% include "layouts/header.html" %}
 
     <main>
-        {{ content | safe }}
+        <h1>Image Gallery</h1>
+        <div id="image-gallery" class="gallery">
+        </div>
+
+        {{ content | safe }} 
     </main>
 
     {% include "layouts/footer.html" %}
