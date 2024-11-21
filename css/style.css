@@ -54,8 +54,45 @@ nav a:hover {
     align-items: center;
 }
 
+/*Canvas for ThreeJS*/
+
 canvas {
     width: auto;
     height: auto;
     display: block;
 }
+
+/*image gallery for population assignment*/
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.flex figure {
+    margin: 0;
+    text-align: center;
+}
+
+.flex img {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.image-titles {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.image-titles li {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
